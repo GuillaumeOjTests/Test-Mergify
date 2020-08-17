@@ -1,7 +1,8 @@
 pull_request_rules:
-  - name: automatic merge if author is GuillaumeOjTests
+  - name: automatic merge if author is GuillaumeOjTests and approved by me
     conditions:
       - author=GuillaumeOjTests
+      - approved-reviews-by=GuillaumeOj
     actions:
       merge:
         method: merge
